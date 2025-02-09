@@ -37,8 +37,8 @@ The application follows a **microservices architecture**, with each service resp
 ### **Setup and Deployment**
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/kegdelpol.git
-   cd kegdelpol
+   git clone https://github.com/Rucol/KEGDELPOL.git
+   cd KEGDELPOL
    ```
 2. **Start the services using Docker Compose:**
    ```bash
