@@ -1,0 +1,82 @@
+Table customers {
+  customer_id integer [primary key]
+  name varchar
+  address varchar
+  contact_info varchar
+  created_at timestamp
+}
+
+Table orders {
+  order_id integer [primary key]
+  customer_id integer 
+  order_date timestamp
+  delivery_date timestamp
+  status varchar
+  created_at timestamp
+}
+
+Table products {
+  product_id integer [primary key]
+  name varchar
+  description text
+  price decimal
+  created_at timestamp
+}
+
+Table order_details {
+  order_detail_id integer [primary key]
+  order_id integer 
+  product_id integer 
+  quantity integer
+  total_price decimal
+  created_at timestamp
+}
+
+Table drivers {
+  driver_id integer [primary key]
+  name varchar
+  contact_info varchar
+  license_info varchar
+  created_at timestamp
+}
+
+Table vehicles {
+  vehicle_id integer [primary key]
+  type varchar
+  capacity integer
+  registration_info varchar
+  created_at timestamp
+}
+
+Table routes {
+  route_id integer [primary key]
+  start_location varchar
+  end_location varchar
+  distance decimal
+  estimated_duration integer
+  assigned_driver_id integer
+  assigned_vehicle_id integer 
+  created_at timestamp
+}
+
+Table deliveries {
+  delivery_id integer [primary key]
+  order_id integer
+  route_id integer 
+  driver_id integer
+  vehicle_id integer 
+  delivery_status varchar
+  actual_delivery_date timestamp
+  notes text
+  created_at timestamp
+}
+
+Ref: orders.customer_id > customers.customer_id // many-to-one
+Ref: order_details.order_id > orders.order_id // many-to-one
+Ref: order_details.product_id > products.product_id // many-to-one
+Ref: routes.assigned_driver_id > drivers.driver_id // many-to-one
+Ref: routes.assigned_vehicle_id > vehicles.vehicle_id // many-to-one
+Ref: deliveries.order_id > orders.order_id // many-to-one
+Ref: deliveries.route_id > routes.route_id // many-to-one
+Ref: deliveries.driver_id > drivers.driver_id // many-to-one
+Ref: deliveries.vehicle_id > vehicles.vehicle_id // many-to-one

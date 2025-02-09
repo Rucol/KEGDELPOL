@@ -1,0 +1,94 @@
+Table Customer {
+  customer_id integer [primary key]
+  customer_name varchar
+  customer_address varchar
+  customer_phone_number varchar(15)
+  customer_auth_id integer
+}
+
+Table Order {
+  order_id integer [primary key]
+  order_customer_id integer 
+  order_date timestamp
+  order_delivery_date timestamp
+  order_status_id integer
+  order_weight decimal
+}
+
+Table Product {
+  product_id integer [primary key]
+  product_name varchar
+  product_description text
+  product_price decimal
+}
+
+Table Order_detail {
+  order_detail_id integer [primary key]
+  order_detail_order_id integer 
+  order_detail_product_id integer 
+  order_detail_quantity integer
+  order_detail_total_price decimal
+}
+
+Table Driver {
+  driver_id integer [primary key]
+  driver_license_info varchar
+  driver_auth_id integer
+}
+
+Table Vehicle {
+  vehicle_id integer [primary key]
+  vehicle_type varchar
+  vehicle_capacity integer
+  vehicle_registration_info varchar
+}
+
+Table Delivery {
+  delivery_id integer [primary key]
+  delivery_order_id integer
+  delivery_start_location varchar
+  delivery_end_location varchar
+  delivery_distance decimal
+  delivery_estimated_duration integer
+  delivery_actual_delivery_date timestamp
+  delivery_notes text
+  delivery_driver_id integer
+  delivery_vehicle_id integer 
+}
+
+Table Employee {
+  employee_id integer [primary key]
+  employee_name varchar
+  employee_surname varchar
+  employee_phone_number varchar
+  employee_auth_id integer
+}
+Table Auth {
+  auth_id integer [primary key]
+  auth_login varchar
+  auth_password varchar
+  auth_role varchar
+}
+Table Role {
+  role_id integer [primary key]
+  role_description varchar
+  role_access varchar
+  role_name varchar
+}
+Table Status {
+  status_id integer [primary key]
+  status_name varchar
+  status_description varchar
+}
+
+Ref: Order.order_customer_id <> Customer.customer_id
+Ref: Order.order_status_id < Status.status_id
+Ref: Order_detail.order_detail_order_id - Order.order_id
+Ref: Order_detail.order_detail_product_id - Product.product_id
+Ref: Delivery.delivery_driver_id > Driver.driver_id
+Ref: Delivery.delivery_vehicle_id > Vehicle.vehicle_id
+Ref: Delivery.delivery_order_id < Order.order_id
+Ref: Auth.auth_role < Role.role_id
+Ref: Driver.driver_id - Employee.employee_id
+Ref: Employee.employee_auth_id - Auth.auth_id
+Ref: Customer.customer_auth_id - Auth.auth_id
