@@ -1,0 +1,21 @@
+body{
+  margin:0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.update-user-search-container{
+  margin-bottom: 2rem;
+}
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 150px;
+    }
+  
+    .choose-action-assign-driver {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  

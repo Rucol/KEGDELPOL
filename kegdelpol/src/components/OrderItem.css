@@ -1,0 +1,14 @@
+.status-container {
+  display: flex;
+  align-items: center;
+}
+
+.status-button {
+  margin-left: 10px; /* Dodaj margines po lewej stronie przycisku */
+  margin-right: 10px;
+}
+.order-item {
+  border: 1px solid #ccc; /* Dodaj obramowanie */
+  padding-right: 40px; /* Dodaj padding dla zwiększenia białej obramówki */
+}
+

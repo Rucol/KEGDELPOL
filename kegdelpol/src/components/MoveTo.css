@@ -1,0 +1,15 @@
+.assign-the-driver {
+    text-align: center; /* Wyśrodkowanie zawartości */
+  }
+  
+  .driver-license-image {
+    width: 200px; /* Dostosuj szerokość obrazka według preferencji */
+    height: auto; /* Automatyczna wysokość dla zachowania proporcji */
+    filter: brightness(1.2) sepia(0.5); /* Resetuj kolor obrazka */
+}
+
+  .assign-the-driver h1 {
+    color: #777; /* Kolor tekstu ustawiony na szary */
+    font-size: 28px; /* Przykładowy rozmiar tekstu */
+  }
+  

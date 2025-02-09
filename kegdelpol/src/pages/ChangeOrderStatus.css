@@ -1,0 +1,26 @@
+body{
+  margin:0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.change-order-status-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-top: 150px;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+body{
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.client-ui {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+ 
+}
+
+.client-grid-elements {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(auto-fit, minmax(auto,1fr, 1fr));
+  gap: 20vh; /* Set the gap between rows */
+
+  grid-template-areas:
+  ". item-1 item-2"
+  "item-3 item-4 item-5"
+  "item-6 item-7 item-8";
+}
+
+
+
+@media (max-width: 768px) {
+  .content-client-ui {
+    padding-top: 150px; /* Zwiększenie odstępu na mniejszych ekranach */
+  }
+
+  .choose-action-client {
+    font-size: 30px; /* Dostosuj rozmiar czcionki dla mniejszych ekranów */
+    margin-bottom: 20px; /* Dostosuj odstęp dla mniejszych ekranów */
+  }
+  
+  .centered-images-client {
+    flex-direction: column; /* Ustaw układ pionowy na mniejszych ekranach */
+    gap: 20px; /* Dodaj odstęp między obrazkami */
+    align-items: center; /* Wyśrodkuj obrazy w pionie */
+  }
+}

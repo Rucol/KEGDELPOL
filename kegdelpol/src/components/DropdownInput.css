@@ -1,0 +1,19 @@
+.dropdown-input-container {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  color: #383928;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #383928;
+  border-radius: 5px;
+  background-color: #F2F0E4;
+}
+
+/* Dodatkowe style dla wyglądu rozwijanej listy */
+.dropdown-select option {
+  padding: 10px;
+}

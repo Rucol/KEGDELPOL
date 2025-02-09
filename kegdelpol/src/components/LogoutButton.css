@@ -1,0 +1,23 @@
+.logout-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000; /* Zmieniono grubość obramowania */
+    border-radius: 5px; /* Zaokrąglenie kształtu */
+    cursor: pointer;
+    margin-left: 20px; /* Ensure some space between the navbar items and logout button */
+}
+
+.logout-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: #000; /* Zmieniono kolor obramowania po najechaniu myszką */
+}
+
+.logout-icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}

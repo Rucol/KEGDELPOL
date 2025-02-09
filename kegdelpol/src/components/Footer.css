@@ -1,0 +1,119 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    padding: 10px 5%;
+    background: #F2F0E4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-top: auto;
+}
+
+.footer-logo1 {
+    display: flex;
+    align-items: center;
+}
+
+.keg-image1 {
+    height: 35px;
+    margin-right: 7px;
+}
+
+.logo-text1 {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.main-title1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sub-title1 {
+    font-size: 9.5px;
+    position: absolute;
+    top: 28px;
+    left: 24.5px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.privacy-policy {
+    margin: 0 14px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.privacy-policy:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 15px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    gap: 7px;
+}
+
+.social-icon {
+    height: 25px;
+    width: 25px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    .footer-logo1 {
+        margin-bottom: 10px;
+    }
+
+    .privacy-policy {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 5%;
+    }
+
+    .keg-image1 {
+        height: 20px;
+    }
+
+    .main-title1 {
+        font-size: 18px;
+    }
+
+    .sub-title1 {
+        font-size: 8px;
+    }
+
+    .privacy-policy {
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    .social-icon {
+        height: 15px;
+        width: 15px;
+    }
+}

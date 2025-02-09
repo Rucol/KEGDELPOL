@@ -1,0 +1,32 @@
+.user-search-input-container {
+    margin-bottom: 20px; /* Dodaj większą odległość między inputem a tabelą */
+  }
+  
+  .user-search-input {
+    display: flex;
+  }
+  
+  .user-search-input input[type="text"] {
+    border: 2px solid black;
+    background-color: #F2F0E4;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 250px; /* Dostosuj szerokość według potrzeb */
+    margin-right: 5px;
+  }
+  
+  .user-search-input button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-search-input button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,23 @@
+.submit-button {
+    width: 60%;
+    max-width: 150px;
+    height: 40px;
+    background-color: #F2F0E4;
+    border: 2px solid #3D3028;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 30px;
+    cursor: pointer;
+    color: #3D3028; /* Zmieniono kolor tekstu na czarny */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+    
+  .submit-button:hover {
+    background-color: #000;
+    color: #FFF;
+  }
+  

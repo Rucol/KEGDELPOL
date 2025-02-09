@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Abyssinica SIL", serif;
+}
+body {
+    background-color: #E5D7BD;
+    margin: 0; /* Usuń domyślne marginesy przeglądarki */
+    padding: 0; /* Usuń domyślne odstępy przeglądarki */
+    box-sizing: border-box; /* Zapewnia, że padding i border są wliczane do szerokości i wysokości elementów */
+  }
+  a {
+    text-decoration: none;
+  }

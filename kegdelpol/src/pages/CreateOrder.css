@@ -1,0 +1,17 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.order-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-flex{
+    align-self:center;
+    justify-self: center;
+}
