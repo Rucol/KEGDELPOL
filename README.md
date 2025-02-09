@@ -58,11 +58,12 @@ The database follows a relational schema with key tables such as `Employee`, `Co
 - Add authentication and authorization mechanisms.
 - Improve UI/UX for better usability.
 
-## 📜 License
-This project is released under the **MIT License**.
-
 ## 👨‍💻 Contributors
-Developed by the KEGDELPOL Team.
+Developed by the KEGDELPOL Team:
+- Rucol
+- Zciwolvo
+- Sarim401
+- elpatrico11
 
 ---
 If you have suggestions or would like to contribute, feel free to open an issue or submit a pull request! 😊
